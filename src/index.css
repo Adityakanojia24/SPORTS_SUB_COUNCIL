@@ -2,7 +2,10 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
+html { 
+    height : 100%;
+    width : 100% ; 
+    }
 body{
     margin:0px;
     padding: 0px;
@@ -27,9 +30,14 @@ input{
     border: none;
 }
 .logo img{
+    position: absolute;
+    left : 20px;
+    top : 10px;
     display: inline-block; 
-    max-height: 160px;
+    /* max-height: 160px; */
     width: auto;
+    margin-top: 7px;
+    height: 120px;
     width: 90px;
 }
 #main{
@@ -39,14 +47,14 @@ input{
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('./images/banner.JPG');
-    animation: change 15s infinite ease-in-out ;
+    animation: change 15s infinite ease-in ;
     position: relative;
     z-index: 0;
 }
 @keyframes change{
     0%
     {
-        background-image: url(images/bg1.JPG);
+        background-image: url(images/bg7.JPG);
     }
     20%
     {
@@ -141,7 +149,7 @@ nav .menu-btn,
 .name{
     color: #effa1f;
     text-align: center;
-	font-family: 'Montserrat';
+	font-family: 'Lato';
 	width: 900px;
 	position: absolute;
     left: 50%;
@@ -156,6 +164,7 @@ nav .menu-btn,
     color: #c5c5c5;
 }
 .name h2{
+    text-shadow: 2px 2px 5px red;
 	font-family:'Lato';
 	font-size: 2.5rem;
 	margin:0px;
@@ -163,6 +172,8 @@ nav .menu-btn,
 	color:#ffffff;
 }
 .name h1{
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
 	font-family:'Lato';
 	font-size: 5rem;
 	margin:0px;
@@ -338,6 +349,13 @@ nav .menu-btn,
 }
 
 #about{
+    
+    width:100%;
+    height:768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/banner4.jpg');
     margin-top:100px ;
 	width:100%;
 	height: 120vh;
@@ -347,14 +365,66 @@ nav .menu-btn,
 	justify-content: space-between;
 	padding: 50px 5% 0px 5%;
 	position: relative;
-}
+    
+    opacity: 1;
 
+    /* position: absolute;
+    content: "";
+    background: -moz-radial-gradient(center, ellipse cover, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+    background: radial-gradient(ellipse at center, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 );
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; */
+
+
+    /* width:100%;
+    height:768px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./images/banner.JPG');
+    animation: change 15s infinite ease-in ;
+    position: relative;
+    z-index: 0; */
+}
+/* @keyframes change{
+    0%
+    {
+        background-image: url(images/bg7.JPG);
+    }
+    20%
+    {
+        background-image: url(images/bg2.JPG);
+    }
+    40%
+    {
+        background-image: url(images/bg3.JPG);
+    }
+    60%
+    {
+        background-image: url(images/bg4.JPG);
+    }
+    80%
+    {
+        background-image: url(images/bg5.JPG);
+    }
+    100%
+    {
+        background-image: url(images/banner.JPG);
+    }
+} */
 .about-text{
     width: 45%;
     color: #fff;
     list-style: circle;
 }
 .about-text h1{
+    color: coral;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 3rem;
 	color:#FF1414;
     font-weight: 500;
@@ -362,12 +432,15 @@ nav .menu-btn,
 	padding: 0px;
 }
 .about-text p{
+    
     width: 80%;
 	font-size: 1.2rem;
-	color:#cecece;
+	color:#fafafa;
 	
 }
 .about-text button{
+     color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     margin-top: 20px;
 	width: 140px;
 	height: 45px;
@@ -387,6 +460,7 @@ nav .menu-btn,
     width: 50%;
 }
 .about-image img{
+    border-radius: 20px;
   width: 600px;
 }
 
