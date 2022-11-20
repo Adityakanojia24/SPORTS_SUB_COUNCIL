@@ -1,6 +1,6 @@
 import React from "react";
 import "./stylecard.css";
-import Cricket from "./cricket.png";
+import Cricket from "./image/cricket.png";
 import football from "./image/football.jpg";
 import basketball from "./image/basketball.jpg";
 import tabletennis from "./image/badmintontable.jpg";
@@ -14,14 +14,14 @@ const Card = () => {
         {/* <body style={{ backgroundImage: `url(${Bg})` }}> */}
 
         <section className="bg-image">
-          <center className>
+          <center className="heading">
             <h1>OUR EVENT </h1>
           </center>
           <div className="container">
             <div className="card">
               <div className="content">
                 <div className="imgBx">
-                  <img src={Cricket} alt="basketball" />
+                  <img src={Cricket} alt="cricket" />
                 </div>
               </div>
               <ul className="sci">
@@ -59,7 +59,7 @@ const Card = () => {
             <div className="card">
               <div className="content">
                 <div className="imgBx">
-                  <img src={tabletennis} alt="basketball" />
+                  <img src={tabletennis} alt="tabletennis" />
                 </div>
               </div>
               <ul className="sci">
@@ -71,7 +71,7 @@ const Card = () => {
             <div className="card">
               <div className="content">
                 <div className="imgBx">
-                  <img src={hockey} alt="football" />
+                  <img src={hockey} alt="hockey" />
                 </div>
               </div>
               <ul className="sci">
@@ -83,7 +83,7 @@ const Card = () => {
             <div className="card">
               <div className="content">
                 <div className="imgBx">
-                  <img src={vollyball} alt="basketball" />
+                  <img src={vollyball} alt="vollyball" />
                 </div>
               </div>
               <ul className="sci">
