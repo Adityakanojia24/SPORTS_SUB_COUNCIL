@@ -3,6 +3,8 @@ import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
+import Card from "./Components/card/card";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
      <Navbar/>
      <Header/>
      <About/>
-     <Contact/>
+      <Card />
+      <Contact/>
+      <Footer />
     </div>
   );
 }
